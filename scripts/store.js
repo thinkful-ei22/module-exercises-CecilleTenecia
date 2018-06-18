@@ -40,6 +40,12 @@ const store = (function () {
     findAndDelete: function(id) {
       const index = this.items.findIndex(item => item.id === id);
       this.items.splice(index, 1);
+    },
+    toggleCheckedFilter: function() {
+      this.hideCheckedItems = !this.hideCheckedItems;
+    },
+    setSearchTerm: function(newArg) {
+      this.searchTerm = newArg;
     }
   };
 
