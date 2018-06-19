@@ -46,7 +46,11 @@ const store = (function () {
     },
     setSearchTerm: function(newArg) {
       this.searchTerm = newArg;
-    }
+    },
+    return {
+    items, hideCheckedItems, searchTerm, findById, addItem, findAndToggleChecked,
+    findAndUpdateName, findAndDelete, toggleCheckedFilter, setSearchTerm
+  };
   };
 
 }() );
