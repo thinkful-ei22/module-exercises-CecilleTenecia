@@ -50,7 +50,8 @@ const store = (function () {
     return {
     items, hideCheckedItems, searchTerm, findById, addItem, findAndToggleChecked,
     findAndUpdateName, findAndDelete, toggleCheckedFilter, setSearchTerm
-  };
+    };
+
   };
 
 }() );
